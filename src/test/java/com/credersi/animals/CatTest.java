@@ -14,7 +14,35 @@ public class CatTest {
 	}
 	
 	@Test
-	public void jellyOnAPlate () {
-		assert(true);
+	public void catFeeds () {
+		Cat cat = new Cat();
+		cat.feeds();
+		cat.feeds();
+		cat.feeds();
+		assertEquals(cat.howHungry(), 0);
 	}
+	
+	@Test
+	public void catRunning () {
+		Cat cat = new Cat();
+		cat.runs();
+		cat.runs();
+		cat.runs();		
+		assertEquals(cat.isAlive(), false);
+	}
+	
+	@Test
+	public void catRunsEats () {
+		Cat cat = new Cat();
+		cat.runs();
+		cat.runs();
+		cat.feeds();
+		cat.feeds();
+		cat.feeds();
+		cat.feeds();
+		cat.feeds();
+		cat.feeds();
+		assertEquals(cat.isAlive(), false);
+	}
+	
 }
