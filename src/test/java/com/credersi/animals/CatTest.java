@@ -12,4 +12,9 @@ public class CatTest {
 		assertTrue(cat.isAlive());
 		assertEquals(cat.howHungry(), 50);
 	}
+	
+	@Test
+	public void jellyOnAPlate () {
+		assert(true);
+	}
 }
