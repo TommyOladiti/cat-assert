@@ -54,7 +54,7 @@ public class CatTest {
 		assertEquals(cat.isAlive(), true);
 	}
 	
-	
+
 	
 	
 	
