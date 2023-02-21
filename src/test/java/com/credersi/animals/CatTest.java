@@ -38,11 +38,26 @@ public class CatTest {
 		cat.runs();
 		cat.feeds();
 		cat.feeds();
-		cat.feeds();
-		cat.feeds();
-		cat.feeds();
-		cat.feeds();
 		assertEquals(cat.isAlive(), false);
 	}
+	
+	@Test
+	public void catEatsRuns () {
+		Cat cat = new Cat();
+		cat.runs();
+		cat.feeds();
+		cat.runs();
+		cat.feeds();
+		cat.feeds();
+		cat.runs();
+		cat.feeds();
+		assertEquals(cat.isAlive(), true);
+	}
+	
+	
+	
+	
+	
+	
 	
 }
